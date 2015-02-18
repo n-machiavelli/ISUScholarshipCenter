@@ -1,0 +1,13 @@
+<ion-view class="bgDark" title="navTitle" left-buttons="leftButtons" right-buttons="rightButtons">
+<ion-content has-header="true" padding="true">
+<div class="list">
+
+    <a class="item item-thumbnail-left" href="#/tab/home/article/{{article.article_id}}" ng-repeat="article in articles">
+      <img src="{{article.article_imagename}}">
+      <h2>{{article.article_title}}</h2>
+      <p>{{article.article_title}}</p>
+    </a>
+
+</div>
+</ion-content>
+</ion-view>

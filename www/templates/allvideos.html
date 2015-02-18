@@ -1,0 +1,11 @@
+<ion-view class="bgDark" title="Watch Video" left-buttons="leftButtons" right-buttons="rightButtons">
+<ion-content has-header="true" padding="true">
+<div class="list">
+    <a class="item item-thumbnail-left" ng-repeat="video in videos" ng-click='checkMedia(video)' ng-repeat="video in videos">
+      <img src="videoimages/{{video.vnum}}.jpg">
+      <h2>{{video.video_name}}</h2>
+      <p>{{video.comedian}}</p>
+    </a>
+</div>
+</ion-content>
+</ion-view>

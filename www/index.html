@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+<style>
+.scroll-content.vcenter 
+  { 
+    display: -webkit-box; 
+    display: -moz-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-box-direction: normal; 
+    -moz-box-direction: normal; 
+    -webkit-box-orient: horizontal; 
+    -moz-box-orient: horizontal; 
+    -webkit-flex-direction: row; 
+    -ms-flex-direction: row; 14 flex-direction: row; 
+    -webkit-flex-wrap: nowrap; 
+    -ms-flex-wrap: nowrap; 
+    flex-wrap: nowrap; 
+    -webkit-box-pack: center; 
+    -moz-box-pack: center; 
+    -webkit-justify-content: center; 
+    -ms-flex-pack: center; 
+    justify-content: center; 
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch; 
+    align-content: stretch; 
+    -webkit-box-align: center; 
+    -moz-box-align: center; 
+    -webkit-align-items: center; 
+    -ms-flex-align: center; 
+    align-items: center;
+  }
+</style>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    
+    <script src="js/services/searchService.js"></script>    
+    <script src="js/controllers/searchController.js"></script>
+
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>
+<!-- Firebase Simple Login -->
+<script src="https://cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+<script src="lib/ionic/js/angular/angular-cache.min.js"></script>
+
+  </head>
+  <body ng-app="isuscholarshipcenter">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>
